@@ -17,6 +17,8 @@ backend:
     # backend will bind on the interface that corresponds to the backend.baseUrl
     # hostname.
     host: 0.0.0.0
+  csp:
+    upgrade-insecure-requests: false
 
   # config options: https://node-postgres.com/api/client
   database:
