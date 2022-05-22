@@ -19,7 +19,17 @@ backend:
     host: 0.0.0.0
   csp:
     upgrade-insecure-requests: false
-
+    
+auth:
+  # see https://backstage.io/docs/auth/ to learn about auth providers
+  # providers: {}
+  environment: production
+  providers:
+    github:
+      development:
+        clientId: ${AUTH_GITHUB_CLIENT_ID}
+        clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
+        
   # config options: https://node-postgres.com/api/client
   database:
     client: better-sqlite3
