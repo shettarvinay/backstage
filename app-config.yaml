@@ -23,7 +23,9 @@ backend:
     # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
     # Default Helmet Content-Security-Policy values can be removed by setting the key to false
   cors:
-    origin: http://localhost:3000
+    origin:
+      - http://localhost:3000
+      - http://13.233.121.164:7007
     methods: [GET, POST, PUT, DELETE]
     credentials: true
   # This is for local developement only, it is not recommended to use this in production
