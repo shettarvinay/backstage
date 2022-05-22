@@ -19,6 +19,10 @@ backend:
     host: 0.0.0.0
   csp:
     upgrade-insecure-requests: false
+  cors:
+    origin:
+      - http://localhost:3000
+      - http://13.233.121.164:7007
     
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
