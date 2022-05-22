@@ -1,6 +1,6 @@
 app:
   title: Scaffolded Backstage App
-  baseUrl: http://13.233.121.164:3000
+  baseUrl: http://13.233.121.164:7007
 organization:
   name: My Company
 
